@@ -20,6 +20,8 @@ def test_submit_student_details(open_and_quit_browser_automation_practice_form):
         city='Karnal'
     )
 
+#бизнес-шаг: заполнить форму данными
     app.registration_form.register(olga)
 
+# бизнес-шаг: проверить форму
     app.registration_form.assert_registered(olga)
